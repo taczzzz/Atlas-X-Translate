@@ -1,8 +1,10 @@
 # 该项目是通过CodeX编写的自用项目，仅供交流学习
 
+因为当前Atlas的X并没有翻译功能？（可能是我没发现）所以制作了这个自用的插件，希望Atlas能早日上线更多功能
+
 # Atlas X Translate
 
-因为当前Atlas的X并没有翻译功能？（可能是我没发现）给 `ChatGPT Atlas.app` 用的 unpacked extension，在 `x.com` / `twitter.com` 的帖子详情页里提供：
+给 `ChatGPT Atlas.app` 用的 unpacked extension，在 `x.com` / `twitter.com` 的帖子详情页里提供：
 
 - 主帖正文整段翻译
 - 主帖正文滑词翻译
