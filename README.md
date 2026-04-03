@@ -2,7 +2,7 @@
 
 # Atlas X Translate
 
-给 `ChatGPT Atlas.app` 用的 unpacked extension，在 `x.com` / `twitter.com` 的帖子详情页里提供：
+因为当前Atlas的X并没有翻译功能？（可能是我没发现）给 `ChatGPT Atlas.app` 用的 unpacked extension，在 `x.com` / `twitter.com` 的帖子详情页里提供：
 
 - 主帖正文整段翻译
 - 主帖正文滑词翻译
@@ -25,14 +25,14 @@
 2. 进入扩展管理页
 3. 开启开发者模式
 4. 选择“加载已解压的扩展程序”
-5. 选择当前目录：`/Users/alberlat/Desktop/研究站/atlas实时翻译`
+5. 选择当前目录：`/Users/xxx/xxx/xxx/atlas实时翻译`
 
 ### 方式二：启动参数兜底
 
 如果 Atlas 没有暴露扩展管理 UI，先完全退出 Atlas，然后执行：
 
 ```bash
-open -na "/Applications/ChatGPT Atlas.app" --args --load-extension="/Users/alberlat/Desktop/研究站/atlas实时翻译"
+open -na "/Applications/ChatGPT Atlas.app" --args --load-extension="/Users/xxx/xxx/xxx/atlas实时翻译"
 ```
 
 ## 设置项
