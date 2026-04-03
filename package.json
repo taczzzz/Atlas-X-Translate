@@ -1,0 +1,13 @@
+{
+  "name": "atlas-x-translate-extension",
+  "version": "0.1.0",
+  "private": true,
+  "description": "Atlas unpacked extension for translating X post content with Chrome built-in AI APIs.",
+  "scripts": {
+    "test": "node --test"
+  },
+  "devDependencies": {
+    "jsdom": "^26.1.0"
+  }
+}
+

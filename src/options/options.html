@@ -1,0 +1,44 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Atlas X Translate 设置</title>
+    <link rel="stylesheet" href="./options.css">
+  </head>
+  <body>
+    <main class="page">
+      <section class="panel">
+        <h1>Atlas X Translate</h1>
+        <p class="lead">配置 Atlas 里 X 主帖正文的翻译行为。</p>
+
+        <label class="field">
+          <span>目标语言</span>
+          <select id="targetLanguage">
+            <option value="zh-Hans">简体中文</option>
+            <option value="zh-Hant">繁體中文</option>
+          </select>
+        </label>
+
+        <label class="field">
+          <span>正文翻译模式</span>
+          <select id="inlineMode">
+            <option value="manual">手动</option>
+            <option value="auto">自动</option>
+          </select>
+        </label>
+
+        <label class="checkbox">
+          <input id="selectionEnabled" type="checkbox">
+          <span>启用滑词翻译</span>
+        </label>
+
+        <button id="saveButton" class="save">保存设置</button>
+        <p id="status" class="status"></p>
+      </section>
+    </main>
+    <script src="../shared/settings.js"></script>
+    <script src="./options.js"></script>
+  </body>
+</html>
+

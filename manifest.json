@@ -1,0 +1,49 @@
+{
+  "manifest_version": 3,
+  "name": "Atlas X Translate",
+  "version": "0.1.0",
+  "description": "在 Atlas 中为 X 帖子提供主帖翻译和滑词翻译。",
+  "permissions": [
+    "storage",
+    "clipboardWrite"
+  ],
+  "host_permissions": [
+    "https://x.com/*",
+    "https://twitter.com/*"
+  ],
+  "background": {
+    "service_worker": "src/background/service_worker.js"
+  },
+  "options_page": "src/options/options.html",
+  "content_scripts": [
+    {
+      "matches": [
+        "https://x.com/*",
+        "https://twitter.com/*"
+      ],
+      "js": [
+        "src/content/page_bridge.js"
+      ],
+      "run_at": "document_idle",
+      "world": "MAIN"
+    },
+    {
+      "matches": [
+        "https://x.com/*",
+        "https://twitter.com/*"
+      ],
+      "js": [
+        "src/shared/utils.js",
+        "src/shared/settings.js",
+        "src/shared/cache.js",
+        "src/content/post_resolver.js",
+        "src/content/translation_engine.js",
+        "src/content/inline_translator.js",
+        "src/content/selection_translator.js",
+        "src/content/content_script.js"
+      ],
+      "run_at": "document_idle"
+    }
+  ]
+}
+
